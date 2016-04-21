@@ -1,0 +1,10 @@
+C000007	Car
+C000008	Finance
+C000010	IT
+C000013	Health
+C000014	Sports
+C000016	Travel
+C000020	Education
+C000022	Employment
+C000023	Culture
+C000024	Military

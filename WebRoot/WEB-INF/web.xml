@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<welcome-file-list>
+		<welcome-file>/qiantai/default.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	 
+
+    <servlet>
+		<servlet-name>uploadVideo</servlet-name>
+		<servlet-class>com.action.upload_file_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>uploadVideo</servlet-name>
+		<url-pattern>/uploadVideo</url-pattern>
+	</servlet-mapping>
+	 
+	 <servlet>
+		<servlet-name>listVideo</servlet-name>
+		<servlet-class>com.action.file_list_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>listVideo</servlet-name>
+		<url-pattern>/listVideo</url-pattern>
+	</servlet-mapping>
+	 
+	   <servlet>
+		<servlet-name>typeVideo</servlet-name>
+		<servlet-class>com.action.fenlei_video_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>typeVideo</servlet-name>
+		<url-pattern>/typeVideo</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+		<servlet-name>playVideo</servlet-name>
+		<servlet-class>com.action.play_video_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>playVideo</servlet-name>
+		<url-pattern>/playVideo</url-pattern>
+	</servlet-mapping>
+
+  <servlet>
+		<servlet-name>delVideo</servlet-name>
+		<servlet-class>com.action.delete_video_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>delVideo</servlet-name>
+		<url-pattern>/delVideo</url-pattern>
+	</servlet-mapping>
+
+  <servlet>
+		<servlet-name>viewVideo</servlet-name>
+		<servlet-class>com.action.view_video_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>viewVideo</servlet-name>
+		<url-pattern>/viewVideo</url-pattern>
+	</servlet-mapping>
+
+
+	<filter>
+		<filter-name>SetChartEncoding</filter-name>
+		<filter-class>com.util.EncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>SetChartEncoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+</web-app>
