@@ -76,8 +76,8 @@ public class upload_file_servlet extends HttpServlet  {
 	                        	  String filename;
 	                              UUID uuid = UUID.randomUUID();
 	                              filename = uuid.toString() + ".mp4";
-	                              vurl = "upload\\" + filename;
-	                              //take the inputstream of uploaded file
+	                              vurl = "./upload/" + filename;
+	                              //take the input stream of uploaded file
 	                              InputStream in = item.getInputStream();
 	                              //create a file output stream
 	                              FileOutputStream out = new FileOutputStream(savePath + "\\" + filename);
