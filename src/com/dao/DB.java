@@ -14,7 +14,7 @@ public class DB
 	private String user = "root";
 	private String password = "123456";
 	private String className = "com.mysql.jdbc.Driver";
-	private String url = "jdbc:mysql://83.212.126.75:3306/videoclass";
+	private String url = "jdbc:mysql://83.212.82.15:3306/videoclass";
 
 	public DB()
 	{
